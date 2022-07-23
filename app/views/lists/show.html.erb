@@ -1,2 +1,8 @@
 <h1><%= @list.name %></h1>
 <p><%= link_to "back to all lists", lists_path %></p>
+
+<div class="row">
+  <% @list.movies.each do |movie| %>
+    <%= render 'shared/movies/card', movie: movie %>
+  <% end %>
+</div>

@@ -1,0 +1,31 @@
+.card {
+  margin-bottom: 8px;
+  .list-card-image {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(50%);
+  }
+  .movie-card-image {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.card-img-overlay {
+  .card-title {
+    text-align: center;
+    font-size: 40px;
+    color: $white;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+small {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 75ch;
+}
