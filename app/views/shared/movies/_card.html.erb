@@ -1,17 +1,14 @@
-<div class="card-columns col-12 col-md-6 col-lg-6 ">
-  <div class="card">
+<div class="d-flex">
 
-    <div class="row">
-      <div class="col">
-        <img class="card-img-top movie-card-image" src=<%= movie.poster_url %> alt="Card image cap">
-      </div>
-      <div class="col">
-        <div class="card-body">
-          <h2 class="card-title row"><%= movie.title %></h2>
-          <p class="card-text row"><%= movie.overview %></p>
-        </div>
-      </div>
-    </div>
+  <%= image_tag movie.poster_url %>
+  <div>
+    <h5>
+      <%= movie.title %>
+    </h5>
 
+    <p>
+      <%= movie.overview %>
+    </p>
   </div>
+
 </div>

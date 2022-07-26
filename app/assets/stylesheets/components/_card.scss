@@ -1,15 +1,18 @@
 .card {
-  margin-bottom: 8px;
-  .list-card-image {
-    height: 300px;
-    width: 100%;
-    object-fit: contain;
-    filter: brightness(50%);
-  }
-  .movie-card-image {
-    height: 100%;
-    object-fit: contain;
-  }
+  //height: 300px;
+  //width: auto;
+
+}
+
+.list-card-image {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+  filter: brightness(50%);
+}
+
+.movie-card-image {
+  object-fit: contain;
 }
 
 .card-img-overlay {

@@ -1,8 +1,10 @@
-<h1><%= @list.name %></h1>
-<p><%= link_to "back to all lists", lists_path %></p>
+<div class="m-3 d-flex align-items-center">
+  <h1 class="me-5"><%= @list.name %></h1>
+  <p><%= link_to "back to all lists", lists_path %></p>
+</div>
 
-<div class="row">
+<div class="me-3 ms-3">
   <% @list.movies.each do |movie| %>
-    <%= render 'shared/movies/card', movie: movie %>
+    <%= render 'shared/movies/card-lewagon', movie: movie %>
   <% end %>
 </div>
