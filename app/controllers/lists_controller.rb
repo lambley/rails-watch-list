@@ -14,6 +14,9 @@ class ListsController < ApplicationController
 
   def create
     @list = List.new(list_params)
+    movie = Movie.find(params[:movie_id])
+    @list.movies = movie
+    raise
     if @list.save
       redirect_to lists_path, status: :see_other
     end

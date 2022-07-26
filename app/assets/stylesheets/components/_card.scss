@@ -1,34 +1,12 @@
 .card {
-  //height: 300px;
-  //width: auto;
-
-}
-
-.list-card-image {
-  height: 300px;
-  width: 100%;
-  object-fit: contain;
-  filter: brightness(50%);
-}
-
-.movie-card-image {
-  object-fit: contain;
-}
-
-.card-img-overlay {
-  .card-title {
-    text-align: center;
-    font-size: 40px;
-    color: $white;
-    a {
-      text-decoration: none;
-    }
+  img {
+    filter: brightness(30%);
+    height: 200px;
+    object-fit: cover;
   }
-}
-
-small {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 75ch;
+  p {
+    top: 36%;
+    font-size: 2vw;
+    color: $white;
+  }
 }

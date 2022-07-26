@@ -3,5 +3,7 @@
   <div class="card-product-infos">
     <h2><%= movie.title %></h2>
     <p><%= movie.overview %></p>
+    <p><%= int_to_stars(movie.rating/10,10) %> (<%= movie.rating %>%)</p>
+    <p><em><i class="fa-solid fa-quote-left"></i> <%= movie.bookmarks.sample.comment %> <i class="fa-solid fa-quote-right"></i></em></p>
   </div>
 </div>

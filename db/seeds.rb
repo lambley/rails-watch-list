@@ -22,7 +22,7 @@ puts "Creating new database from db/seeds.rb"
     title: movie_json['Title'],
     overview: movie_json['Plot'],
     poster_url: movie_json['Poster'],
-    rating: movie_json['imdbRating']
+    rating: movie_json['Metascore']
   )
   if movie.save
     puts "created movie with id #{movie.id} - #{movie.title}"
@@ -30,7 +30,7 @@ puts "Creating new database from db/seeds.rb"
 end
 
 puts "generating lists"
-10.times do
+15.times do
   list = List.create(
     name: Faker::Book.genre
   )
