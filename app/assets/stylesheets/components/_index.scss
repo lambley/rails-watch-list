@@ -9,3 +9,10 @@
 .star {
   color: $yellow;
 }
+
+.sticky-list-navbar {
+  top: 70px;
+  position: sticky;
+  background-color: #F4F4F4;
+  z-index: 1;
+}
