@@ -1,0 +1,5 @@
+<%= simple_form_for [@list] do |f| %>
+  <%= f.input :name, label: "Current list name" %>
+  <%= f.input :photo, as: :file, label: 'List cover photo'  %>
+  <%= f.submit "Update List" %>
+<% end %>
