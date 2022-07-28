@@ -1,8 +1,5 @@
 <%= simple_form_for [@list] do |f| %>
-  <%= f.input :name, :label => "Watch List Name" %>
-  <%= f.simple_fields_for :movie do |m| %>
-    <p>Add at least <strong>one</strong> movie:</p>
-    <%= m.input :movie_id, collection: Movie.all %>
-  <% end %>
+  <%= f.input :name, label: "List name" %>
+  <%= f.input :photo, as: :file, label: 'List cover photo'  %>
   <%= f.submit "Create List" %>
 <% end %>
